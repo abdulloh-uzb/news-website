@@ -22,4 +22,9 @@ class HomeController extends Controller
         return view('frontend.contact');
     }
 
+    public function view($slug)
+    {
+        return view('frontend.view');
+    }
+
 }

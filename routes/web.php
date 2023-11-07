@@ -7,4 +7,5 @@ Route::group(['as'=>'frontend.'], function(){
     Route::get('/', [HomeController::class, 'home'])->name('home');
     Route::get('/about', [HomeController::class, 'about'])->name('about');
     Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
+    Route::get('/news/{slug}', [HomeController::class, 'view'])->name('news');
 });
